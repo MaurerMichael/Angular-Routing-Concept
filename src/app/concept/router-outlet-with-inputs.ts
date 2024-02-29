@@ -48,12 +48,6 @@ export class RouterOutletWithInputs extends RouterOutlet {
       for (const inputName of Object.keys(changes["inputs"].currentValue)) {
         this._inputsUsed.set(inputName, true);
       }
-      /**
-       * Using TypeScript's 'as any' trick: Not recommended, but possible, is accessing the private variable by casting
-       * the instance to any. This essentially tells TypeScript to ignore type-checking, allowing you to access private
-       * properties. However, this is generally considered bad practice as it defeats the purpose of private variables
-       * and TypeScript's type safety.
-       */
       if(this.activated) {
         this._applyInputStateDiff(this.activated)
       }
