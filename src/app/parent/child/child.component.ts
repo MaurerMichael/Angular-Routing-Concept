@@ -4,8 +4,11 @@ import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
   selector: 'app-child',
   standalone: true,
   imports: [],
-  templateUrl: './child.component.html',
-  styleUrl: './child.component.css'
+  styles: [],
+  template: `
+    <p>child works!</p>
+    <h1>{{counter}}</h1>
+  `
 })
 export class ChildComponent implements OnChanges{
 
