@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterOutlet} from "@angular/router";
-import {Inputs, RouterOutletDatapipe} from "../concept/router-outlet-datapipe";
+import {Inputs, RouterOutletWithInputs} from "../concept/router-outlet-with-inputs";
 import {NgComponentOutlet} from "@angular/common";
 
 @Component({
@@ -8,7 +8,7 @@ import {NgComponentOutlet} from "@angular/common";
   standalone: true,
   imports: [
     RouterOutlet,
-    RouterOutletDatapipe,
+    RouterOutletWithInputs,
     NgComponentOutlet
   ],
   styles:[],

@@ -1,11 +1,10 @@
 import {
   ComponentRef,
   Directive,
-  EnvironmentInjector,
   Input,
   SimpleChanges,
 } from '@angular/core';
-import {ActivatedRoute, RouterOutlet} from "@angular/router";
+import {RouterOutlet} from "@angular/router";
 
 export interface Inputs {
   [attribute: string]: any
@@ -19,7 +18,7 @@ export interface Inputs {
   exportAs: 'outlet'
 })
 // @ts-ignore
-export class RouterOutletDatapipe extends RouterOutlet {
+export class RouterOutletWithInputs extends RouterOutlet {
 
   @Input() inputs?: Inputs
 
