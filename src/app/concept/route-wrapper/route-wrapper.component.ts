@@ -7,10 +7,10 @@ import {ChildComponent} from "../../parent/child/child.component";
 
 @Component({
   selector: 'app-route-wrapper',
-  styleUrl: './route-wrapper.component.css',
+  styles: [],
   template: `
     <ng-container
-      *ngComponentOutlet="ChildComponent; inputs: inputs"
+      *ngComponentOutlet="commponent; inputs: inputs"
     ></ng-container>
   `
 })

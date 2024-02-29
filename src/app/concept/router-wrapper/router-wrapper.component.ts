@@ -4,8 +4,8 @@ import {DataPipeService} from "../data-pipe.service";
 
 @Component({
   selector: 'app-router-wrapper',
-  templateUrl: './router-wrapper.component.html',
-  styleUrl: './router-wrapper.component.css'
+  styles: [],
+  template: `<router-outlet></router-outlet>`
 })
 export class RouterWrapperComponent implements OnInit, OnChanges{
 
